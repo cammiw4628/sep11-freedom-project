@@ -12,15 +12,15 @@
 #### Loading Sprite:
  * We use the `loadSprite()` function to load our image to become a declared sprite that we can use in the game.
   *  You have to load your sprite **before** you can add the sprite to the game.
-  *In this function we add in quotations the **name of the sprite** and the folder your image is in with the image or if there is no folder just the **name of the image**.
+ * In this function we add in quotations the **name of the sprite** and the folder your image is in with the image or if there is no folder just the **name of the image**.
 ```JS
 loadSprite("green", "sprites/green-seed.png")
 ```
 #### Adding Sprite:
  * To add the sprite we use `add()` to the sprite.
  * `add()` can also use add for _other properties_ like
-  *  **Position** of the sprite
-  *  The **size** of the sprite
+   *   **Position** of the sprite
+   *   The **size** of the sprite
  * Use `sprite()` to declare the sprite you are using.
  * `pos()` is used for the `(x, y)` of where you want the sprite to be located at
  * `scale()` is to determine the size of the sprite.

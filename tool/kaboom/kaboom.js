@@ -18,18 +18,15 @@ const player = add([
     area(),
     body(),
 ]);
-
+// to go right
 onKeyDown("right", () => {
 	player.move(SPEED, 0)
 })
-
+// to go left
 onKeyDown("left", () => {
 	player.move(-SPEED, 0)
 })
-
-
-
-
+// extra text
 add([
     pos(35, 25),
     text("cool!", {

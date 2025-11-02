@@ -26,6 +26,14 @@ onKeyDown("right", () => {
 onKeyDown("left", () => {
 	player.move(-SPEED, 0)
 })
+// to go up
+onKeyDown("up", () => {
+	player.move(0, -SPEED)
+})
+// to go down
+onKeyDown("down", () => {
+	player.move(0, SPEED)
+})
 // extra text
 add([
     pos(35, 25),

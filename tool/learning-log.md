@@ -35,6 +35,25 @@ add([
  * Keep in mind that you need a comma`,` after every function inside add or else the game might bug.
    *  No need for comma on the last function because there is no other function after it.
 
+### 10/27/25: Learning Log 2
+ * I learned how to **move a sprite/player** using the arrow keys.
+   *   I used [Kaboom](https://kaboomjs.com/) playground features to understand the code of the movements to incorporate into my own project.
+#### Movement
+ * The usage of `onKeyDown()` allows us to specify and define the direction we are going too. We name the direction like "right" or "up" to define exactly which direction is being used.
+ * `player.move()` is used to determine which sprite is moving.
+   *   In this case, player is the sprite that will be moving and is named "player", which will be the dominant sprite.
+ * Inside the paranthesis will be what will determine where the sprite moves.
+ #### Directions
+ To go from left and right is different from up and down but they are very similar to each other. The right and left have the same code but left has a `-` to depict that it is left.
+ * `SPEED, 0` moves the sprite right
+ * `-SPEED, 0` moves the sprite left.
+However, moving up and down is different with the `SPEED` and `0` being swapped.
+ * `0, -SPEED` is to go up
+ * `0, SPEED` is to go down
+To explain this since `SPEED` is on the x-axis for the right and left, it will be moving only on the x-axis.
+ * `-` is negative, so left will be moving with that sign.
+For up and down, `SPEED` is on the y-axis and move only on the y-axis.
+ * `-` up will be moving with that sign. 
 
 <!--
 * Links you used today (websites, videos, etc)

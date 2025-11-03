@@ -49,10 +49,10 @@ add([
  * `-SPEED, 0` moves the sprite left.
 However, moving up and down is different with the `SPEED` and `0` being swapped.
  * `0, -SPEED` is to go up
- * `0, SPEED` is to go down
-To explain this since `SPEED` is on the x-axis for the right and left, it will be moving only on the x-axis.
- * `-` is negative, so left will be moving with that sign.
-For up and down, `SPEED` is on the y-axis and move only on the y-axis.
+ * `0, SPEED` is to go down       
+To explain this since `SPEED` is on the x-axis for the right and left, it will be moving only on the x-axis.   
+ * `-` is negative, so left will be moving with that sign.      
+For up and down, `SPEED` is on the y-axis and move only on the y-axis.    
  * `-` up will be moving with that sign. 
 
 <!--

@@ -4,7 +4,7 @@
 ### Content
 The tool I have chosen for my SEP11 Freedom Project is [Kaboom.js](https://kaboomjs.com/) because it has qualities that can contribute to my project. The project I want to make is an interactive game that is assessible for all users. This game more specifically is a garden based game that allows users to create their own garden. I have tinkered with my tool like figuring out how to create different sprites and allowing there to be an dominant sprite that can indicate that the dominant sprite is the player and can move around within the system.        
 
-I have learned about the x and y coordinates(x, y) and how it relates to movement in javascript. The movement in javascript is similar to basic math problems on a coordinate plane with values of x and y. The x and y have axis that contribute to the movement of a character going in an x and y axis way. Using Kaboom.js I was able to recognize these patterns and the codes to use for the movement of left and right and the similar traits to x and y. You can see the code below in my [tools folder](../kaboom/kaboom.js]    
+I have learned about the x and y coordinates(x, y) and how it relates to movement in javascript. The movement in javascript is similar to basic math problems on a coordinate plane with values of x and y. The x and y have axis that contribute to the movement of a character going in an x and y axis way. Using Kaboom.js I was able to recognize these patterns and the codes to use for the movement of left and right and the similar traits to x and y. You can see the code below in my [tools folder](../kaboom/kaboom.js)        
 ```js
 
 ```

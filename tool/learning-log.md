@@ -49,11 +49,38 @@ add([
  * `-SPEED, 0` moves the sprite left.
 However, moving up and down is different with the `SPEED` and `0` being swapped.
  * `0, -SPEED` is to go up
- * `0, SPEED` is to go down       
-To explain this since `SPEED` is on the x-axis for the right and left, it will be moving only on the x-axis.   
- * `-` is negative, so left will be moving with that sign.      
-For up and down, `SPEED` is on the y-axis and move only on the y-axis.    
- * `-` up will be moving with that sign. 
+ * `0, SPEED` is to go down
+To explain this since `SPEED` is on the x-axis for the right and left, it will be moving only on the x-axis.
+ * `-` is negative, so left will be moving with that sign.
+For up and down, `SPEED` is on the y-axis and move only on the y-axis.
+ * `-` up will be moving with that sign.
+
+### 11/16/25: Learning Log 3
+ * Today I learned about components of hovering over an item
+  * [Kaboom](http://kaboomjs.com/) displays two features that allow us hover over a sprite and end a hover
+#### Hover
+ * `onHover()` is a line of code that is displayed next to the sprite you want the hovering to occur on when the user's mouse is on the sprite
+ * Using this feature you can change the sprites color to recognize when you are hovering
+
+```JS
+greenSeed.onHover(() => {
+    debug.log("hovering on green seed")
+    greenSeed.color = YELLOW
+})
+```
+ * In this code, when the user hovers over the `greenSeed` the sprite will turn **yellow.**
+ * A message will be displayed on the bottom to inform the user what they are hovering over
+#### Unhover
+ * `onHoverEnd()` is when the user's mouse is no longer hovering over the sprite
+ * So when you hover and then move your mouse to another location that is not the sprite, this can allow the sprite to change color again
+```JS
+greenSeed.onHoverEnd(() => {
+    debug.log("unhovered green seed")
+    greenSeed.color = GREEN
+})
+```
+ * In the code above, when the user stops hovering the sprite, the sprite will turn to the color **green** instead of **yellow.**
+
 
 <!--
 * Links you used today (websites, videos, etc)

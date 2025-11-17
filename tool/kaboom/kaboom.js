@@ -3,11 +3,25 @@ kaboom({
 })
 
 loadSprite("green", "sprites/green-seed.png")
-add([
+const greenSeed = add([
     sprite("green"),
-    pos(120, 80),
+    pos(120, 350),
     scale(0.3),
+    area(),
 ]);
+
+// when user mouse hovers over a sprite
+greenSeed.onHover(() => {
+    debug.log("hovering on green seed")
+    greenSeed.color = YELLOW
+})
+// user unhovers the sprite
+greenSeed.onHoverEnd(() => {
+    debug.log("unhovered green seed")
+    greenSeed.color = GREEN
+})
+
+// create player sprite
 loadSprite("player", "sprites/farmer.png")
 const SPEED = 320
 const player = add([
@@ -18,6 +32,7 @@ const player = add([
     area(),
     body(),
 ]);
+
 // to go right
 onKeyDown("right", () => {
 	player.move(SPEED, 0)

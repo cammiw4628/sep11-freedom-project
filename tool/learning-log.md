@@ -81,6 +81,26 @@ greenSeed.onHoverEnd(() => {
 ```
  * In the code above, when the user stops hovering the sprite, the sprite will turn to the color **green** instead of **yellow.**
 
+### 11/22/25: Learning Log 4
+ * I learned about how to input a background in [Kaboom](http://kaboomjs.com/) and kaboom features.
+#### Background
+ * I wanted to create a grassy background, instead of just a simple plain colored background. Instead of using `background: []` for my background, I learned that a background can be used similar to adding a sprite due to `background: []` only being used for a colored background.
+ * Similar to a sprite, we load the image of what we want as the background using `loadSprite()` and name the sprite being used along with the use of `add([])` to load the background.
+    *   You may adjust the background size if it is too small using `scale()` because my background was too small at first.
+```JS
+loadSprite("grass", "/sprites/grass.png");
+add([
+    sprite("grass"),
+    pos(0, 0),
+    scale(5),
+]);
+```
+ * Also be sure that the background is one of the first sprites that is added because if it is last none of the other sprites will be seen because it will be covered by the big background.
+#### Kaboom feature
+ * As I was starting to test if my background was working, I experienced an issue due to the background not loading at all.
+ * I looked into the console to find out that my code was right but something else was interfering with my code.
+ * I read the console and figured out that _Kaboom_ had a feature that did not allow a very big `png`(image) to be uploaded, which was the case of my bug.
+
 
 <!--
 * Links you used today (websites, videos, etc)

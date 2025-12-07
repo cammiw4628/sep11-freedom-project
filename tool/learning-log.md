@@ -114,7 +114,7 @@ add([
 * `shake(50)` 50 means the intensity when the collision happens and shake is the built in camera shake.
 * The code shows us that is "player" collides with "seeds" a shake will occur with an intensity of 50.
   *   Also be sure to always have a label for your sprite like:
-  ```JS
+```JS
 const greenSeed = add([
     sprite("green"),
     pos(120, 350),
@@ -122,7 +122,7 @@ const greenSeed = add([
     area(),
     "seeds",
 ]);
-  ```
+```
   *   The label on the bottom will allow the code to determine the game object being used for the collision
   *   In this case "seeds" is the game object name, so when the player hits the game object, the screen will then shake.
 

@@ -101,6 +101,34 @@ add([
  * I looked into the console to find out that my code was right but something else was interfering with my code.
  * I read the console and figured out that _Kaboom_ had a feature that did not allow a very big `png`(image) to be uploaded, which was the case of my bug.
 
+ ### 12/7/25: Learning Log 5
+  * I learned how to shake the screen whenever there is an interaction between a specific sprite with another sprite.
+  * I also learned about collisions to activate the shakes.
+#### Shakes and Collisions
+  * Using [Kaboom's](http://kaboomjs.com/) features provided in the website, the `shake()` was very useful when shaking the screen, as well as `onCollide()`.
+```JS
+  player.onCollide("seeds", () => {
+    shake(50)
+})
+```
+* `shake(50)` 50 means the intensity when the collision happens and shake is the built in camera shake.
+* The code shows us that is "player" collides with "seeds" a shake will occur with an intensity of 50.
+  *   Also be sure to always have a label for your sprite like:
+  ```JS
+const greenSeed = add([
+    sprite("green"),
+    pos(120, 350),
+    scale(0.3),
+    area(),
+    "seeds",
+]);
+  ```
+  *   The label on the bottom will allow the code to determine the game object being used for the collision
+  *   In this case "seeds" is the game object name, so when the player hits the game object, the screen will then shake.
+
+
+
+
 
 <!--
 * Links you used today (websites, videos, etc)

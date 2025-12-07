@@ -15,6 +15,7 @@ const greenSeed = add([
     pos(120, 350),
     scale(0.3),
     area(),
+    "seeds",
 ]);
 
 // when user mouse hovers over a sprite
@@ -22,12 +23,7 @@ greenSeed.onHover(() => {
     debug.log("hovering on seed")
     greenSeed.color = GREEN
 })
-loadSprite("seed", "sprites/green-seed.png")
-add([
-    sprite("seed"),
-    pos(250, 350),
-    scale(0.3),
-]);
+
 // user unhovers the sprite
 greenSeed.onHoverEnd(() => {
     debug.log("unhovered seed")
@@ -44,6 +40,7 @@ const player = add([
     rotate(0),
     area(),
     body(),
+    offscreen({ destroy: true }),
 ]);
 
 // to go right
@@ -62,6 +59,11 @@ onKeyDown("up", () => {
 onKeyDown("down", () => {
 	player.move(0, SPEED)
 })
+
+player.onCollide("seeds", () => {
+    shake(50)
+})
+
 // extra text
 add([
     pos(35, 25),
@@ -70,3 +72,4 @@ add([
         width: 320,
     })
 ])
+

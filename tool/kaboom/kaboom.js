@@ -27,7 +27,7 @@ greenSeed.onHover(() => {
 // user unhovers the sprite
 greenSeed.onHoverEnd(() => {
     debug.log("unhovered seed")
-    greenSeed.color = YELLOW
+    greenSeed.color = WHITE
 })
 
 // create player sprite

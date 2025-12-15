@@ -125,10 +125,21 @@ const greenSeed = add([
 ```
   *   The label on the bottom will allow the code to determine the game object being used for the collision
   *   In this case "seeds" is the game object name, so when the player hits the game object, the screen will then shake.
-
-
-
-
+### 12/8/25: Learning Log 6
+ * I learned about [Kaboom's](http://kaboomjs.com/) **coloring system** with unhover and hover.
+#### Original Color
+I wanted the user to be able to hover over the sprite and change it's color but after the hovering leaves the sprite, the color will go back to normal. I learned about hovering and unhovering but I did not have enough time to fully go into the coloring on Kaboom.
+ * Before my code turned the sprite into yellow after unhovering it because of the code line `greenSeed.color = YELLOW` because I was unaware of what the original color will be indicated as.
+ * I googled more about Kaboom and what their original color or default color is, which directed me to the conclusion that `WHITE` can be replaced with `YELLOW` to be considered as default sprite.
+ * `WHITE` has no tint on the sprite image compared to the other colors like `YELLOW` and `GREEN`, which makes `WHITE` considered the original color.
+#### Code
+```JS
+greenSeed.onHoverEnd(() => {
+    debug.log("unhovered seed")
+    greenSeed.color = WHITE
+})
+```
+ * So when the user hovers on the sprite and then unhovers, the hovering color will stop and be back to the original color again.
 
 <!--
 * Links you used today (websites, videos, etc)

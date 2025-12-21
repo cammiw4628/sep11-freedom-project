@@ -2,7 +2,7 @@
 ##### 12/20/25
 
 ### Content
-I have been learning my tool in [kaboom.js](../tool/kaboom/kaboom.js) and have used the websites guidance when learning about different factors I can use in Kaboom. Using [Kaboom](https://kaboomjs.com/) I learned about `hovering` and `unhovering` with color features from Kaboom. This means that when a user's mouse is hovering over an sprite, the sprite can change colors and when a sprite is unhovered the color can change or go back to normal.
+I have been learning my tool in [kaboom.js](../tool/kaboom/kaboom.js) and have used the websites guidance when learning about different factors I can use in Kaboom. Using [Kaboom](https://kaboomjs.com/) I learned about `hovering` and `unhovering` with color features from Kaboom. This means that when a user's mouse is hovering over an sprite, the sprite can change colors and when a sprite is unhovered the color can change or go back to normal.       
 With `.onHover()` this detects the sprite when the mouse is placed on it and with `.color` the color when hovered can be changed. In this case my sprite will have the color **green** when the mouse is on the sprite and will generate a comment from the `debug.log` that will appear when the mouse is hovering on that specific sprite.
 ```JS
 greenSeed.onHover(() => {

@@ -62,6 +62,13 @@ onKeyDown("down", () => {
 
 player.onCollide("seeds", () => {
     shake(50)
+    add([
+        pos(100, 125),
+        text("WOAH", {
+            size: 48,
+            width: 320,
+        })
+    ])
 })
 
 // extra text
@@ -72,4 +79,5 @@ add([
         width: 320,
     })
 ])
+
 

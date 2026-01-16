@@ -141,6 +141,31 @@ greenSeed.onHoverEnd(() => {
 ```
  * So when the user hovers on the sprite and then unhovers, the hovering color will stop and be back to the original color again.
 
+### 1/9/25: Learning Log 7
+ * I started to play around with my code using [Kaboom](http://kaboomjs.com/) as my tool to discover more on what I can produce using the **text** feature.
+#### How to add a text
+ * Adding a text is similar to adding a sprite
+   *   We use `add()` to add the text
+   *   The text will be in quotation marks to determine what we want to say, as well as manipulating the size and width of the text
+   *   We can determine the position of the text on the screen
+#### Text with Collisions
+ * I added the text feature into the collision as when the player collides with the seed the screen will shake
+ * Adding the text allowed the screen not only to shake but also to show the text I wrote
+
+```JS
+player.onCollide("seeds", () => {
+    shake(50)
+    add([
+        pos(100, 125),
+        text("WOAH", {
+            size: 48,
+            width: 320,
+        })
+    ])
+})
+```
+* The text "WOAH" will remain there after the collision has occurred.
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc

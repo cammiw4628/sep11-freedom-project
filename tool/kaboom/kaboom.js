@@ -66,7 +66,6 @@ player.onCollide("seeds", () => {
         pos(100, 125),
         text("WOAH", {
             size: 48,
-            width: 320,
         })
     ])
 })

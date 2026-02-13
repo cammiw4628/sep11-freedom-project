@@ -1,7 +1,7 @@
 # Plan
 
-## Tool: 
-## Product: 
+## Tool: Kaboom
+## Product: Garden Game
 
 ---
 
@@ -9,13 +9,33 @@
 
 #### MVP
 
-- [ ] Task (deadline: X)
-  - [ ] Subtask (deadline: X)
+- [ ] Images
+  - [ ] Sprite image seed packs (deadline: 2/16)
+  - [ ] Sprite images for different kinds of flowers (deadline: 2/19)
+  - [ ] Adding all the sprites to project and code (deadline: 2/22)
+- [ ] Front Page
+  - [ ] Play button and instruction button (deadline: 2/25)
+- [ ] Scene
+  - [ ] Create a scene for the actual game and scene for instruction text using `scene()`(deadline: 2/28)
+- [ ] Conditionals
+  - [ ] Use `go()` to connect multiple scenes one with game and one for intruction page using buttons(deadline: 3/4)
+  - [ ] Button features to choose to get a specific seed pack (deadline: 3/14)
+- [ ] Highlight
+  - [ ] Use Kaboom hover and unhover feature on seed packs (deadline: 3/21)
+- [ ] Change
+  - [ ] Upon clicking the seed pack, a flower can appear (deadline: 3/28)
+- [ ] Loop
+  - [ ] Allow users be able to click a button again to get another seed (deadline: 4/5)
+- [ ] Background
+  - [ ] Build a basic map design (deadline: 4/12)
+
 
 #### Beyond MVP
 
-- [ ] Task
-  - [ ] Subtask
+- [ ] Background
+  - [ ] Advance the map design to be appealing
+- [ ] Back button
+  - [ ] Have a button to return back to front page
 
 
 <!-- EXAMPLE
@@ -49,7 +69,7 @@
 
 <!-- DO NOT USE THIS YET
 
-#### Peer Feedback 
+#### Peer Feedback
 
 | Name | Glows | Grows |
 | -------- | ------- | ------- |

@@ -1,6 +1,6 @@
 # Plan
 
-## Tool: Kaboom
+## Tool: Kaboom.js
 ## Product: Garden Game
 
 ---

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page</title>
+<style>
+</style>
+</head>
+  <script src="https://unpkg.com/kaboom/dist/kaboom.js"></script>
+
+<body>
+
+// js
+  <script>
+    kaboom()
+    loadSprite("green", "/sprites/green-seed.png");
+    scene("first", () => { // the first scene
+      add([
+        sprite("green"),
+        pos(100, 100),
+        scale(0.3),
+      ]);
+    });
+    go("first"); // will be starting scene
+
+  </script>
+</body>

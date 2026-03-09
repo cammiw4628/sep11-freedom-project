@@ -166,6 +166,30 @@ player.onCollide("seeds", () => {
 ```
 * The text "WOAH" will remain there after the collision has occurred.
 
+### 3/2/26: Learning Log 8
+* Learning about `scene()` and `go()` to create multiple pages of scenes, that we can go into on [Kaboom](http://kaboomjs.com/).
+* `scene()` is a function on Kaboom that can allow multiple scenes into one website that include different things like a starting screen, losing screen, or winning screen.
+   *   Kaboom wants each scene name to be defined with a name and I used "first" because it will be my first scene.
+   *   Inside one scene will include code that will appear only in that specific scene like an image, a text, or different functions.
+```JS
+scene("first", () => {
+  add([
+    sprite("green"),
+    pos(100, 100),
+    scale(0.3),
+  ]);
+});
+```
+* The `go()` function used in Kaboom is to determine what scene will be the output for the user.
+* Inside this function will be a specific scene name to determine what scene will "go"
+* If `go()` is used with an **if statement** to see if something happened, go will direct the user to that specific scene.
+* In this case, `go()` is used without any statements of any sort, so the scene that is inside `go()` will be the starting scene.
+```JS
+go("first");
+```
+
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc

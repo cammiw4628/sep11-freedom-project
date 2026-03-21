@@ -12,14 +12,43 @@
 
 // js
   <script>
-    kaboom()
+    kaboom({
+      background: [105, 60, 0],
+    })
     loadSprite("green", "/sprites/green-seed.png");
+    loadSprite("grass", "/sprites/grassy.png");
     scene("first", () => { // the first scene
-      add([
-        sprite("green"),
-        pos(100, 100),
-        scale(0.3),
-      ]);
+      var map = addLevel([ // map
+        "============================================",
+        "=                                          =",
+        "=                                          =",
+        "=                                          =",
+        "=                                          =",
+        "=                                          =",
+        "=                                          =",
+        "=                                          =",
+        "=                                          =",
+        "=                                          =",
+        "=                                          =",
+        "=                                          =",
+        "=                                          =",
+        "=                                          =",
+        "=                                          =",
+        "=                                          =",
+        "=                                          =",
+        "=                                          =",
+        "============================================",
+      ], {
+          tileWidth: 32,
+          tileHeight: 32,
+          tiles: {
+            "=": () => [ // symbol for sprite
+            sprite("grass"),
+            scale(0.2),
+            area(),
+            ],
+          }
+        })
     });
     go("first"); // will be starting scene
 

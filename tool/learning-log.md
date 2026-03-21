@@ -190,9 +190,9 @@ go("first");
 ### 3/16/26: Learning Log 9
  * I learned about map making on [Kaboom](http://kaboomjs.com/), where I used a sprite character to make a background border to my game.
  * The map feature includes using a symbol, like `=`, `-`, `@`, etc to describe a specific sprite.
-  *  Using `addLevel()` inside will allow me to design a map layout, in this case I only used a symbol `=` to show a border of what my map will look like.
+   *   Using `addLevel()` inside will allow me to design a map layout, in this case I only used a symbol `=` to show a border of what my map will look like.
 ```JS
-addLevel([
+var map=addLevel([
   "================",
   "=              =",
   "=              =",

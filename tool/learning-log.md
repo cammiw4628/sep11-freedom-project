@@ -187,6 +187,36 @@ scene("first", () => {
 ```JS
 go("first");
 ```
+### 3/16/26: Learning Log 9
+ * I learned about map making on [Kaboom](http://kaboomjs.com/), where I used a sprite character to make a background border to my game.
+ * The map feature includes using a symbol, like `=`, `-`, `@`, etc to describe a specific sprite.
+  *  Using `addLevel()` inside will allow me to design a map layout, in this case I only used a symbol `=` to show a border of what my map will look like.
+```JS
+addLevel([
+  "================",
+  "=              =",
+  "=              =",
+  "=              =",
+  "================",
+  ],
+```
+* To define the symbol used _(=)_ I have to mention it inside `tiles` to show what the symbol tile it will represent.
+* When defining, the sprite image I want to use will be inside `sprite()` witht he name of the sprite. The result will show each `=` in my map will output the sprite each time `=` appears.
+* The tiles will be given an width and height, if needed.
+```JS
+{
+tileWidth: 32,
+tileHeight: 32,
+  tiles: {
+    "=": () => [
+      sprite("grass"),
+      scale(0.2),
+      area(),
+    ],
+  }
+})
+```
+
 
 
 

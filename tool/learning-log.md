@@ -216,6 +216,42 @@ tileHeight: 32,
   }
 })
 ```
+### 3/23/26: Learning Log 10
+ * I learned how to make an button on [Kaboom](http://kaboomjs.com/)
+ * First, I made a customized function that is very similar to what I learned in class with functions
+ * `function addButton(txt, p, a)` my function have three indicators with _text, positioning, and action._
+ * Inside this function I need to create a button and add a text with my action that will happen on the click.
+    *   The button will be defined similar to any other sprite using `add()` and using the rect shape with _x, y, width, and length._
+    *   There will also be `pos(p)` to show the position of the button that will be called later.
+    *   Using `outline()` will determine the stroke of the rectangle
+    *   `anchor("center")` will just center the button
+```JS
+var btn = add([
+	rect(240, 80, 200, 200),
+	pos(p),
+  outline(5),
+	area(),
+	anchor("center"),
+]);
+```
+ * Adding the text is similar to what I learned in **Learning Log 7** with `add()`  and `text()` with txt being one of the indicators of the function that will be called.
+ * I can adjust the color using **RGB** and center the text.
+ * `onClick(a)` means that when the button is clicked, an action(one of the indicators being called) will occur.
+
+```JS
+btn.add([
+	text(txt),
+	anchor("center"),
+	color(0),
+	])
+btn.onClick(a)
+```
+ * Finally, I call the created function with `addButton` that I created with what I want to happen.
+```JS
+addButton("Start", vec2(200, 100), () => debug.log("Start Game"));
+addButton("settings", vec2(200, 200), () => debug.log("In Settings"));
+```
+
 
 
 

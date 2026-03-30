@@ -10,7 +10,7 @@
 
 <body>
 
-// js
+<!-- js -->
   <script>
     kaboom({
       background: [105, 60, 0],
@@ -18,6 +18,33 @@
     loadSprite("green", "/sprites/green-seed.png");
     loadSprite("grass", "/sprites/grassy.png");
     scene("first", () => { // the first scene
+      var green = add([ // what will show up in the first scene
+        sprite("green"),
+        pos(200, 500),
+        scale(0.3),
+      ]);
+      function addButton(txt, p, a) {
+        // add button
+	      var btn = add([
+		    rect(240, 80, 200, 200),
+		    pos(p), // position
+        outline(5), // border
+		    area(),
+		    anchor("center"),
+	      ]);
+        // adds the text
+      	btn.add([
+		    text(txt),
+		    anchor("center"), // centers text
+		    color(0), // text color
+	      ])
+        btn.onClick(a) // if bottom is clicked
+      }
+      addButton("Start", vec2(200, 100), () => debug.log("Start Game")); // call function
+      addButton("settings", vec2(200, 200), () => debug.log("In Settings")); // call function
+
+    });
+    scene("game", () => { // the second scene
       var map = addLevel([ // map
         "============================================",
         "=                                          =",

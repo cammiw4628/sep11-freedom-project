@@ -9,13 +9,13 @@
 
 #### MVP
 
-- [ ] Images
-  - [ ] Sprite image seed packs (deadline: 2/16)
-  - [ ] Sprite images for different kinds of flowers (deadline: 2/19)
-  - [ ] Adding all the sprites to project and code (deadline: 2/22)
-- [ ] Front Page
-  - [ ] Play button and instruction button (deadline: 2/25)
-- [ ] Scene
+- [X] Images
+  - [X] Sprite image seed packs (deadline: 2/16)
+  - [X] Sprite images for different kinds of flowers (deadline: 2/19)
+  - [X] Adding all the sprites to project and code (deadline: 2/22)
+- [X] Front Page
+  - [X] Play button and instruction button (deadline: 2/25)
+- [] Scene
   - [ ] Create a scene for the actual game and scene for instruction text using `scene()`(deadline: 2/28)
 - [ ] Conditionals
   - [ ] Use `go()` to connect multiple scenes one with game and one for intruction page using buttons(deadline: 3/4)

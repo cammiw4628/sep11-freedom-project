@@ -16,7 +16,7 @@
     </head>
     <body>
         <!-- HTML -->
-
+        <!-- <h1>Cammi's Garden</h1> -->
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://unpkg.com/kaboom/dist/kaboom.js"></script>
@@ -43,6 +43,32 @@
             loadSprite("whiteF", "/img/white-f.png");
             loadSprite("yellowF", "/img/yellow-f.png");
 
+            scene("front", () => { // front page scene
+                function buttons(txt, p, a){ // custon function
+                    var sButton = add([ // start button
+                        rect(300, 50), // size of button
+                        pos(p), // position called later
+                        area(),
+                        anchor("center"),
+                    ]);
+                    sButton.add([ // add on
+                        color(0), // black text
+                        text(txt), // text
+                        anchor("center"),
+                    ])
+                    sButton.onClick(a); // if buttons are clicked, will go to an action called
+                }
+                buttons("Start Game", vec2(400, 300), () => go("game")); // start button
+                buttons("Instructions", vec2(400, 400)); // instruction button
+            });
+            scene("game", () =>{
+                var greenSeed = add([ // place holder seed
+                    sprite("green"),
+                    pos(100, 100),
+                    scale(0.2),
+                ]);
+            });
+            go("front"); // start with two button scene
         </script>
     </body>
 </html>

@@ -15,10 +15,10 @@
   - [X] Adding all the sprites to project and code (deadline: 2/22)
 - [X] Front Page
   - [X] Play button and instruction button (deadline: 2/25)
-- [] Scene
-  - [ ] Create a scene for the actual game and scene for instruction text using `scene()`(deadline: 2/28)
+- [X] Scene
+  - [X] Create a scene for the actual game and scene for instruction text using `scene()`(deadline: 2/28)
+  - [X] Use `go()` to connect multiple scenes one with game and one for intruction page using buttons(deadline: 3/4)
 - [ ] Conditionals
-  - [ ] Use `go()` to connect multiple scenes one with game and one for intruction page using buttons(deadline: 3/4)
   - [ ] Button features to choose to get a specific seed pack (deadline: 3/14)
 - [ ] Highlight
   - [ ] Use Kaboom hover and unhover feature on seed packs (deadline: 3/21)
@@ -26,14 +26,13 @@
   - [ ] Upon clicking the seed pack, a flower can appear (deadline: 3/28)
 - [ ] Loop
   - [ ] Allow users be able to click a button again to get another seed (deadline: 4/5)
-- [ ] Background
-  - [ ] Build a basic map design (deadline: 4/12)
 
 
 #### Beyond MVP
 
 - [ ] Background
   - [ ] Advance the map design to be appealing
+  - [ ] Build a basic map design
 - [ ] Back button
   - [ ] Have a button to return back to front page
 

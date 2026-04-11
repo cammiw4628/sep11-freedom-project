@@ -16,7 +16,6 @@
     </head>
     <body>
         <!-- HTML -->
-        <!-- <h1>Cammi's Garden</h1> -->
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://unpkg.com/kaboom/dist/kaboom.js"></script>
@@ -43,7 +42,15 @@
             loadSprite("whiteF", "/img/white-f.png");
             loadSprite("yellowF", "/img/yellow-f.png");
 
+            var userName = prompt("What is your name?"); // global variable
             scene("front", () => { // front page scene
+                add([
+                    pos(100, 100),
+                    text("Welcome to " + userName + "'s garden!", { // introduction text
+                    size: 60, // text size
+                    width: 550, // width the text can be before moving to a new line
+                    })
+                ]);
                 function buttons(txt, p, a){ // custon function
                     var sButton = add([ // start button
                         rect(300, 50), // size of button
@@ -55,11 +62,27 @@
                         color(0), // black text
                         text(txt), // text
                         anchor("center"),
-                    ])
+                    ]);
                     sButton.onClick(a); // if buttons are clicked, will go to an action called
                 }
                 buttons("Start Game", vec2(400, 300), () => go("game")); // start button
-                buttons("Instructions", vec2(400, 400)); // instruction button
+                buttons("Instructions", vec2(400, 400), () => go("instructions")); // instruction button
+            });
+            scene("instructions", () =>{ // instructions scene
+                add([
+                    pos(50, 50),
+                    text("Hello " + userName + "! Here is how you get started with your own virtual garden!" , { // greeting text
+                    size: 50, // text size
+                    width: 1000, // how long text will be
+                    })
+                ]);
+                add([
+                    pos(50, 250),
+                    text("Click the start button on the main page to begin your virutual garden.It is up to you to choose what you want to build your garden with and do not hesitate to make a choice. There will be multiple seed packs and flowers to decorate your garden, all you have to do is click! Have fun " + userName + "!" , { // text of instructions
+                    size: 35, // text size
+                    width: 1100, // how long text will be
+                    })
+                ]);
             });
             scene("game", () =>{
                 var greenSeed = add([ // place holder seed

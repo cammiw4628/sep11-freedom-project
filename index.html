@@ -68,6 +68,7 @@
                 buttons("Start Game", vec2(400, 300), () => go("game")); // start button
                 buttons("Instructions", vec2(400, 400), () => go("instructions")); // instruction button
             });
+
             scene("instructions", () =>{ // instructions scene
                 add([
                     pos(50, 50),
@@ -84,12 +85,71 @@
                     })
                 ]);
             });
-            scene("game", () =>{
-                var greenSeed = add([ // place holder seed
-                    sprite("green"),
-                    pos(100, 100),
-                    scale(0.2),
-                ]);
+
+            scene("game", () =>{ // game scene
+                function getSeed(){ // function to get seed
+                    var userColor = prompt("Hey! Pick a color for a seed!"); // user chooses what color seed they want
+                    if(userColor == "red"){  // if user types in "red", they will get a red seed
+                        var redSeed = add([ // red seed
+                            sprite("red"), // sprite name
+                            pos(rand(150, 500), rand(150, 500)), // random placed x and y
+                            scale(0.1), // size of sprite
+                        ]);
+                    }
+                    else if(userColor == "orange"){
+                        var orangeSeed = add([ // orange seed
+                            sprite("orange"),
+                            pos(rand(150, 500), rand(150, 500)), // randomly placed seed
+                            scale(0.1),
+                        ]);
+                    }
+                    else if(userColor == "yellow"){
+                        var yellowSeed = add([ // yellow seed
+                            sprite("yellow"),
+                            pos(rand(150, 500), rand(150, 500)), // random place
+                            scale(0.1),
+                        ]);
+                    }
+                    else if(userColor == "green"){
+                        var greenSeed = add([ // green seed
+                            sprite("green"),
+                            pos(rand(150, 500), rand(150, 500)), // random position
+                            scale(0.1),
+                        ]);
+                    }
+                    else if(userColor == "blue"){
+                        var blueSeed = add([ // blue seed
+                            sprite("blue"),
+                            pos(rand(150, 500), rand(150, 500)), // random
+                            scale(0.1),
+                        ]);
+                    }
+                    else if(userColor == "purple"){
+                        var purpleSeed = add([ // purple seed
+                            sprite("purple"),
+                            pos(rand(150, 500), rand(150, 500)), // random
+                            scale(0.1),
+                        ]);
+                    }
+                    else if(userColor == "pink"){
+                        var pinkSeed = add([ // pink seed
+                            sprite("pink"),
+                            pos(rand(150, 500), rand(150, 500)), // random
+                            scale(0.1),
+                        ]);
+                    }
+                    else if(userColor == "white"){
+                        var whiteSeed = add([ // white seed
+                            sprite("white"),
+                            pos(rand(150, 500), rand(150, 500)), // random
+                            scale(0.1),
+                        ]);
+                    }
+                    else {
+                        alert("That is not a seed color! Try again?"); // alert user of invalid seed
+                    }
+                }
+                getSeed(); // call function
             });
             go("front"); // start with two button scene
         </script>

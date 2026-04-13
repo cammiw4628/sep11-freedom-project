@@ -20,8 +20,6 @@
   - [X] Use `go()` to connect multiple scenes one with game and one for intruction page using buttons(deadline: 3/4)
 - [X] Conditionals
   - [X] Button features to choose to get a specific seed pack (deadline: 3/14)
-- [ ] Highlight
-  - [ ] Use Kaboom hover and unhover feature on seed packs (deadline: 3/21)
 - [ ] Change
   - [ ] Upon clicking the seed pack, a flower can appear (deadline: 3/28)
 - [ ] Loop
@@ -35,6 +33,8 @@
   - [ ] Build a basic map design
 - [ ] Back button
   - [ ] Have a button to return back to front page
+- [ ] Highlight
+  - [ ] Use Kaboom hover and unhover feature on seed packs
 
 
 <!-- EXAMPLE

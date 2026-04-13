@@ -94,62 +94,133 @@
                             sprite("red"), // sprite name
                             pos(rand(150, 500), rand(150, 500)), // random placed x and y
                             scale(0.1), // size of sprite
+                            area(),
                         ]);
+                        redSeed.onClick(() => { // if user clicks seed, can get flower
+                            destroy(redSeed); // destory the seed
+                            add([
+                            sprite("redF"), // sprite name
+                            pos(rand(150, 800), rand(0, 500)), // random placed x and y
+                            scale(0.3) // size
+                            ]);
+                        });
                     }
                     else if(userColor == "orange"){
                         var orangeSeed = add([ // orange seed
                             sprite("orange"),
                             pos(rand(150, 500), rand(150, 500)), // randomly placed seed
                             scale(0.1),
+                            area(),
                         ]);
+                        orangeSeed.onClick(() => { // if user clicks seed, can get flower
+                            destroy(orangeSeed); // destory the seed
+                            add([
+                            sprite("orangeF"), // sprite name
+                            pos(rand(150, 800), rand(0, 500)), // random placed x and y
+                            scale(0.3) // size
+                            ]);
+                        });
                     }
                     else if(userColor == "yellow"){
                         var yellowSeed = add([ // yellow seed
                             sprite("yellow"),
                             pos(rand(150, 500), rand(150, 500)), // random place
                             scale(0.1),
+                            area(),
                         ]);
+                        yellowSeed.onClick(() => { // if user clicks seed, can get flower
+                            destroy(yellowSeed); // destory the seed
+                            add([
+                            sprite("yellowF"), // sprite name
+                            pos(rand(150, 800), rand(0, 500)), // random placed x and y
+                            scale(0.3) // size
+                            ]);
+                        });
                     }
                     else if(userColor == "green"){
                         var greenSeed = add([ // green seed
                             sprite("green"),
                             pos(rand(150, 500), rand(150, 500)), // random position
                             scale(0.1),
+                            area(),
                         ]);
+                        greenSeed.onClick(() => { // if user clicks seed, can get flower
+                            destroy(greenSeed); // destory the seed
+                            add([
+                            sprite("greenF"), // sprite name
+                            pos(rand(150, 800), rand(0, 500)), // random placed x and y
+                            scale(0.3) // size
+                            ]);
+                        });
                     }
                     else if(userColor == "blue"){
                         var blueSeed = add([ // blue seed
                             sprite("blue"),
                             pos(rand(150, 500), rand(150, 500)), // random
                             scale(0.1),
+                            area(),
                         ]);
+                        blueSeed.onClick(() => { // if user clicks seed, can get flower
+                            destroy(blueSeed); // destory the seed
+                            add([
+                            sprite("blueF"), // sprite name
+                            pos(rand(150, 800), rand(0, 500)), // random placed x and y
+                            scale(0.3) // size
+                            ]);
+                        });
                     }
                     else if(userColor == "purple"){
                         var purpleSeed = add([ // purple seed
                             sprite("purple"),
                             pos(rand(150, 500), rand(150, 500)), // random
                             scale(0.1),
+                            area(),
                         ]);
+                        purpleSeed.onClick(() => { // if user clicks seed, can get flower
+                            destroy(purpleSeed); // destory the seed
+                            add([
+                            sprite("purpleF"), // sprite name
+                            pos(rand(150, 800), rand(0, 500)), // random placed x and y
+                            scale(0.3) // size
+                            ]);
+                        });
                     }
                     else if(userColor == "pink"){
                         var pinkSeed = add([ // pink seed
                             sprite("pink"),
                             pos(rand(150, 500), rand(150, 500)), // random
                             scale(0.1),
+                            area(),
                         ]);
+                        pinkSeed.onClick(() => { // if user clicks seed, can get flower
+                            destroy(pinkSeed); // destory the seed
+                            add([
+                            sprite("pinkF"), // sprite name
+                            pos(rand(150, 800), rand(0, 500)), // random placed x and y
+                            scale(0.3) // size
+                            ]);
+                        });
                     }
                     else if(userColor == "white"){
                         var whiteSeed = add([ // white seed
                             sprite("white"),
                             pos(rand(150, 500), rand(150, 500)), // random
                             scale(0.1),
+                            area(),
                         ]);
+                        whiteSeed.onClick(() => { // if user clicks seed, can get flower
+                            destroy(whiteSeed); // destory the seed
+                            add([
+                            sprite("whiteF"), // sprite name
+                            pos(rand(150, 800), rand(0, 500)), // random placed x and y
+                            scale(0.3) // size
+                            ]);
+                        });
                     }
                     else {
                         alert("That is not a seed color! Try again?"); // alert user of invalid seed
                     }
                 }
-                getSeed(); // call function
                 var seedButton = add([ // add seed button
                     rect(300, 50), // width and length
                     pos(600, 600), // location x and y
@@ -164,6 +235,13 @@
                 seedButton.onClick(() => { // if user clicks button, get seed option is offered
                     getSeed();
                 });
+                // redSeed.onClick(() => { // if user clicks seed, can get flower
+                //     add([
+                //         sprite("redF"), // sprite name
+                //         pos(rand(150, 500), rand(150, 500)), // random placed x and y
+                //         scale(0.1)
+                //     ]);
+                // });
             });
             go("front"); // start with two button scene
         </script>

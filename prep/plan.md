@@ -18,8 +18,8 @@
 - [X] Scene
   - [X] Create a scene for the actual game and scene for instruction text using `scene()`(deadline: 2/28)
   - [X] Use `go()` to connect multiple scenes one with game and one for intruction page using buttons(deadline: 3/4)
-- [ ] Conditionals
-  - [ ] Button features to choose to get a specific seed pack (deadline: 3/14)
+- [X] Conditionals
+  - [X] Button features to choose to get a specific seed pack (deadline: 3/14)
 - [ ] Highlight
   - [ ] Use Kaboom hover and unhover feature on seed packs (deadline: 3/21)
 - [ ] Change

@@ -150,6 +150,20 @@
                     }
                 }
                 getSeed(); // call function
+                var seedButton = add([ // add seed button
+                    rect(300, 50), // width and length
+                    pos(600, 600), // location x and y
+                    area(),
+                    anchor("center"),
+                ]);
+                seedButton.add([ // add on
+                        color(0), // black text
+                        text("+get seed+"), // text
+                        anchor("center"), // center text
+                ]);
+                seedButton.onClick(() => { // if user clicks button, get seed option is offered
+                    getSeed();
+                });
             });
             go("front"); // start with two button scene
         </script>

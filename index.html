@@ -88,7 +88,7 @@
                 var moodNums = [1, 2, 3]
                 if(userMood == moodNums[0]) {
                     add([
-                        pos(50, 500),
+                        pos(50, 450),
                         text("Oh no! Hopefully this game will boost your mood and make your day brighter! The flower stage your mood is similar to a seed that has not grown yet to be a flower, but with a little bit of water and motiation you will grow better!" , { // feedback text
                         size: 30, // text size
                         width: 1000, // how long text will be
@@ -97,7 +97,7 @@
                 }
                 else if(userMood == moodNums[1]) {
                     add([
-                        pos(50, 500),
+                        pos(50, 450),
                         text("Wow, a neutral mood! Your mood can definietly be lifted more. The stage of a flower your mood is at is flower bud that is not fully developed to be a flower yet, but after this game you will bloom brighter than before." , { // feedback text
                         size: 30, // text size
                         width: 1000, // how long text will be
@@ -106,13 +106,27 @@
                 }
                 else {
                     add([
-                        pos(50, 500),
+                        pos(50, 450),
                         text("WOAH!! Your mood is awesome so far but it can be even more above the charts! You're a flower but this game will make you be the tallest and brightest flower anyone ever saw!" , { // feedback text
                         size: 30, // text size
                         width: 1000, // how long text will be
                         })
                     ]);
                 }
+                var backButton = add([ // add back button
+                    rect(300, 50), // width and length
+                    pos(650, 600), // location x and y
+                    area(),
+                    anchor("center"),
+                ]);
+                backButton.add([ // add on
+                        color(0), // black text
+                        text("Go Back"), // text
+                        anchor("center"), // center text
+                ]);
+                backButton.onClick(() => { // if user clicks button, goes back to main page
+                    go("front") // main page
+                });
             });
 
             scene("game", () =>{ // game scene
@@ -263,6 +277,20 @@
                 ]);
                 seedButton.onClick(() => { // if user clicks button, get seed option is offered
                     getSeed();
+                });
+                var backButton2 = add([ // add back button
+                    rect(300, 50), // width and length
+                    pos(170, 600), // location x and y
+                    area(),
+                    anchor("center"),
+                ]);
+                backButton2.add([ // add on
+                        color(0), // black text
+                        text("Back"), // text
+                        anchor("center"), // center text
+                ]);
+                backButton2.onClick(() => { // if user clicks button, goes back to main page
+                    go("front") // main page
                 });
             });
             go("front"); // start with two button scene

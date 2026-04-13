@@ -24,8 +24,8 @@
   - [X] Upon clicking the seed pack, a flower can appear (deadline: 3/28)
 - [X] Array
   - [X] Ask user their mood on a 1-3 scale and make a comment on instruction page(deadline: 4/5)
-- [ ] Back button
-  - [ ] Have a button to return back to front page (deadline: 4/12)
+- [X] Back button
+  - [X] Have a button to return back to front page (deadline: 4/12)
 
 
 #### Beyond MVP

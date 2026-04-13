@@ -20,10 +20,12 @@
   - [X] Use `go()` to connect multiple scenes one with game and one for intruction page using buttons(deadline: 3/4)
 - [X] Conditionals
   - [X] Button features to choose to get a specific seed pack (deadline: 3/14)
-- [ ] Change
-  - [ ] Upon clicking the seed pack, a flower can appear (deadline: 3/28)
-- [ ] Loop
-  - [ ] Allow users be able to click a button again to get another seed (deadline: 4/5)
+- [X] Change
+  - [X] Upon clicking the seed pack, a flower can appear (deadline: 3/28)
+- [X] Array
+  - [X] Ask user their mood on a 1-3 scale and make a comment on instruction page(deadline: 4/5)
+- [ ] Back button
+  - [ ] Have a button to return back to front page (deadline: 4/12)
 
 
 #### Beyond MVP
@@ -31,8 +33,6 @@
 - [ ] Background
   - [ ] Advance the map design to be appealing
   - [ ] Build a basic map design
-- [ ] Back button
-  - [ ] Have a button to return back to front page
 - [ ] Highlight
   - [ ] Use Kaboom hover and unhover feature on seed packs
 

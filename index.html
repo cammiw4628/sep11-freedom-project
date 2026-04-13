@@ -79,11 +79,40 @@
                 ]);
                 add([
                     pos(50, 250),
-                    text("Click the start button on the main page to begin your virutual garden.It is up to you to choose what you want to build your garden with and do not hesitate to make a choice. There will be multiple seed packs and flowers to decorate your garden, all you have to do is click! Have fun " + userName + "!" , { // text of instructions
-                    size: 35, // text size
+                    text("Click the start button on the main page to begin your virtual garden experience. It is up to you to choose what colors you want to include in your garden and do not hesitate to make a choice. There will be multiple colored seed packs and flowers to decorate your garden, all you have to do is click! Have fun " + userName + "!" , { // text of instructions
+                    size: 30, // text size
                     width: 1100, // how long text will be
                     })
                 ]);
+                var userMood = prompt("How are you feeling right now on a scale 1-3? 1 being the worst, 2 is mixed emotions, and 3 is great.")
+                var moodNums = [1, 2, 3]
+                if(userMood == moodNums[0]) {
+                    add([
+                        pos(50, 500),
+                        text("Oh no! Hopefully this game will boost your mood and make your day brighter! The flower stage your mood is similar to a seed that has not grown yet to be a flower, but with a little bit of water and motiation you will grow better!" , { // feedback text
+                        size: 30, // text size
+                        width: 1000, // how long text will be
+                        })
+                    ]);
+                }
+                else if(userMood == moodNums[1]) {
+                    add([
+                        pos(50, 500),
+                        text("Wow, a neutral mood! Your mood can definietly be lifted more. The stage of a flower your mood is at is flower bud that is not fully developed to be a flower yet, but after this game you will bloom brighter than before." , { // feedback text
+                        size: 30, // text size
+                        width: 1000, // how long text will be
+                        })
+                    ]);
+                }
+                else {
+                    add([
+                        pos(50, 500),
+                        text("WOAH!! Your mood is awesome so far but it can be even more above the charts! You're a flower but this game will make you be the tallest and brightest flower anyone ever saw!" , { // feedback text
+                        size: 30, // text size
+                        width: 1000, // how long text will be
+                        })
+                    ]);
+                }
             });
 
             scene("game", () =>{ // game scene
@@ -235,13 +264,6 @@
                 seedButton.onClick(() => { // if user clicks button, get seed option is offered
                     getSeed();
                 });
-                // redSeed.onClick(() => { // if user clicks seed, can get flower
-                //     add([
-                //         sprite("redF"), // sprite name
-                //         pos(rand(150, 500), rand(150, 500)), // random placed x and y
-                //         scale(0.1)
-                //     ]);
-                // });
             });
             go("front"); // start with two button scene
         </script>

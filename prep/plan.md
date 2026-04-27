@@ -33,6 +33,10 @@
 - [ ] Background
   - [ ] Advance the map design to be appealing
   - [ ] Build a basic map design
+- [ ] Allow lower case text in `prompt()`
+- [ ] Change colors of text
+  - [ ] All colors contrast to be easily readable
+- [ ] List of colors user's can get
 - [ ] Highlight
   - [ ] Use Kaboom hover and unhover feature on seed packs
 

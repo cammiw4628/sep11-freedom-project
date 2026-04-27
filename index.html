@@ -132,7 +132,7 @@
             scene("game", () =>{ // game scene
                 function getSeed(){ // function to get seed
                     var userColor = prompt("Hey! Pick a color for a seed!"); // user chooses what color seed they want
-                    if(userColor == "red"){  // if user types in "red", they will get a red seed
+                    if(userColor.toLowerCase() == "red"){  // if user types in "red", they will get a red seed
                         var redSeed = add([ // red seed
                             sprite("red"), // sprite name
                             pos(rand(150, 500), rand(150, 500)), // random placed x and y
@@ -148,7 +148,7 @@
                             ]);
                         });
                     }
-                    else if(userColor == "orange"){
+                    else if(userColor.toLowerCase() == "orange"){
                         var orangeSeed = add([ // orange seed
                             sprite("orange"),
                             pos(rand(150, 500), rand(150, 500)), // randomly placed seed
@@ -164,7 +164,7 @@
                             ]);
                         });
                     }
-                    else if(userColor == "yellow"){
+                    else if(userColor.toLowerCase() == "yellow"){
                         var yellowSeed = add([ // yellow seed
                             sprite("yellow"),
                             pos(rand(150, 500), rand(150, 500)), // random place
@@ -180,7 +180,7 @@
                             ]);
                         });
                     }
-                    else if(userColor == "green"){
+                    else if(userColor.toLowerCase() == "green"){
                         var greenSeed = add([ // green seed
                             sprite("green"),
                             pos(rand(150, 500), rand(150, 500)), // random position
@@ -196,7 +196,7 @@
                             ]);
                         });
                     }
-                    else if(userColor == "blue"){
+                    else if(userColor.toLowerCase() == "blue"){
                         var blueSeed = add([ // blue seed
                             sprite("blue"),
                             pos(rand(150, 500), rand(150, 500)), // random
@@ -212,7 +212,7 @@
                             ]);
                         });
                     }
-                    else if(userColor == "purple"){
+                    else if(userColor.toLowerCase() == "purple"){
                         var purpleSeed = add([ // purple seed
                             sprite("purple"),
                             pos(rand(150, 500), rand(150, 500)), // random
@@ -228,7 +228,7 @@
                             ]);
                         });
                     }
-                    else if(userColor == "pink"){
+                    else if(userColor.toLowerCase() == "pink"){
                         var pinkSeed = add([ // pink seed
                             sprite("pink"),
                             pos(rand(150, 500), rand(150, 500)), // random
@@ -244,7 +244,7 @@
                             ]);
                         });
                     }
-                    else if(userColor == "white"){
+                    else if(userColor.toLowerCase() == "white"){
                         var whiteSeed = add([ // white seed
                             sprite("white"),
                             pos(rand(150, 500), rand(150, 500)), // random

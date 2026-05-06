@@ -31,13 +31,13 @@
 #### Beyond MVP
 - [X] Allow lower case text in `prompt()`(deadline: 4/27)
 - [X] List of colors user's can get (deadline: 5/5)
-- [ ] Change colors of text (deadline:5/7)
-  - [ ] All colors contrast to be easily readable (deadline:5/10)
+- [ ] Change colors of text (deadline: 5/6)
+  - [ ] All colors contrast to be easily readable (deadline:5/6)
 - [ ] Background
-  - [ ] Advance the map design to be appealing (deadline: 5/10)
-  - [ ] Build a basic map design (deadline: 5/10)
+  - [ ] Advance the map design to be appealing (deadline: 5/6)
+  - [ ] Build a basic map design (deadline: 5/6)
 - [ ] Highlight
-  - [ ] Use Kaboom hover and unhover feature on seed packs (if time: 5/10)
+  - [ ] Use Kaboom hover and unhover feature on seed packs (if time: 5/6)
 
 
 <!-- EXAMPLE

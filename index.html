@@ -45,8 +45,9 @@
             var userName = prompt("What is your name?"); // global variable
             scene("front", () => { // front page scene
                 add([
-                    pos(100, 100),
-                    text("Welcome to " + userName + "'s garden!", { // introduction text
+                    pos(200, 100),
+                    color(0, 255, 0),
+                    text("Welcome to " + userName + "'s Garden!", { // introduction text
                     size: 60, // text size
                     width: 550, // width the text can be before moving to a new line
                     })
@@ -72,15 +73,17 @@
             scene("instructions", () =>{ // instructions scene
                 add([
                     pos(50, 50),
+                    color(255, 255, 0), // yellow color
                     text("Hello " + userName + "! Here is how you get started with your own virtual garden!" , { // greeting text
                     size: 50, // text size
                     width: 1000, // how long text will be
                     })
                 ]);
                 add([
-                    pos(50, 250),
-                    text("Click the start button on the main page to begin your virtual garden experience. It is up to you to choose what colors you want to include in your garden and do not hesitate to make a choice. There will be multiple colored seed packs and flowers to decorate your garden, all you have to do is click! Have fun " + userName + "!" , { // text of instructions
-                    size: 30, // text size
+                    pos(50, 200),
+                    color(255, 255, 0),
+                    text("Click the start button on the main page to begin your virtual garden experience. It is up to you to choose what colors you want to include in your garden and do not hesitate to make a choice, all you have to do is click and type! Have fun " + userName + "!" , { // text of instructions
+                    size: 35, // text size
                     width: 1100, // how long text will be
                     })
                 ]);
@@ -88,30 +91,36 @@
                 var moodNums = [1, 2, 3]
                 if(userMood == moodNums[0]) {
                     add([
-                        pos(50, 450),
+                        pos(50, 400),
+                        color(255, 255, 0),
                         text("Oh no! Hopefully this game will boost your mood and make your day brighter! The flower stage your mood is similar to a seed that has not grown yet to be a flower, but with a little bit of water and motiation you will grow better!" , { // feedback text
-                        size: 30, // text size
+                        size: 35, // text size
                         width: 1000, // how long text will be
                         })
                     ]);
                 }
                 else if(userMood == moodNums[1]) {
                     add([
-                        pos(50, 450),
+                        pos(50, 400),
+                        color(255, 255, 0),
                         text("Wow, a neutral mood! Your mood can definietly be lifted more. The stage of a flower your mood is at is flower bud that is not fully developed to be a flower yet, but after this game you will bloom brighter than before." , { // feedback text
-                        size: 30, // text size
+                        size: 35, // text size
+                        width: 1000, // how long text will be
+                        })
+                    ]);
+                }
+                else if(userMood == moodNums[2]) {
+                    add([
+                        pos(50, 400),
+                        color(255, 255, 0),
+                        text("WOAH!! Your mood is awesome so far but it can be even more above the charts! You're a flower but this game will make you be the tallest and brightest flower anyone ever saw!" , { // feedback text
+                        size: 35, // text size
                         width: 1000, // how long text will be
                         })
                     ]);
                 }
                 else {
-                    add([
-                        pos(50, 450),
-                        text("WOAH!! Your mood is awesome so far but it can be even more above the charts! You're a flower but this game will make you be the tallest and brightest flower anyone ever saw!" , { // feedback text
-                        size: 30, // text size
-                        width: 1000, // how long text will be
-                        })
-                    ]);
+                    alert("Not a number! Try again next time"); // alert if user does not put a number listed
                 }
                 var backButton = add([ // add back button
                     rect(300, 50), // width and length

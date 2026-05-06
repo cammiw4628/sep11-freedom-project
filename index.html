@@ -292,6 +292,28 @@
                 backButton2.onClick(() => { // if user clicks button, goes back to main page
                     go("front") // main page
                 });
+                function colors(txt, p, r, g, b){ // custom color box function
+                    var colorBox = add([ // define box
+                        color(r, g, b), // colors decided when called
+                        rect(200, 80), // size of rectangle
+                        pos(p), // position called later
+                        anchor("center"),
+                    ]);
+                    colorBox.add([ // add on
+                        color(0), // black text
+                        text(txt), // text
+                        anchor("center"),
+                    ]);
+                }
+                // call color box function
+                colors("red", vec2(860, 70), 255, 0, 0); // red
+                colors("orange", vec2(860, 150), 255, 160, 0); // orange
+                colors("yellow", vec2(860, 230), 237, 255, 0); // yellow
+                colors("green", vec2(860, 310), 140, 255, 150); // green
+                colors("blue", vec2(860, 390), 40, 177, 255); // blue
+                colors("purple", vec2(860, 470), 190, 130, 255); // purple
+                colors("pink", vec2(860, 550), 255, 200, 230);// pink
+                colors("white", vec2(860, 630), 255, 255, 255); // white
             });
             go("front"); // start with two button scene
         </script>

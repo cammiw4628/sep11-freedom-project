@@ -41,6 +41,8 @@
             loadSprite("redF", "img/red-f.png");
             loadSprite("whiteF", "img/white-f.png");
             loadSprite("yellowF", "img/yellow-f.png");
+            // house sprite
+            loadSprite("house", "img/house.png");
 
             var userName = prompt("What is your name?"); // global variable
             scene("front", () => { // front page scene
@@ -68,6 +70,11 @@
                 }
                 buttons("Start Game", vec2(400, 300), () => go("game")); // start button
                 buttons("Instructions", vec2(400, 400), () => go("instructions")); // instruction button
+                add([
+                    sprite("house"), // sprite name
+                    pos(900, 100),
+                    scale(1) // size
+                ]);
             });
 
             scene("instructions", () =>{ // instructions scene
@@ -323,6 +330,11 @@
                 colors("purple", vec2(860, 470), 190, 130, 255); // purple
                 colors("pink", vec2(860, 550), 255, 200, 230);// pink
                 colors("white", vec2(860, 630), 255, 255, 255); // white
+                add([
+                    sprite("house"), // sprite name
+                    pos(930, 100),
+                    scale(1) // size
+                ]);
             });
             go("front"); // start with two button scene
         </script>

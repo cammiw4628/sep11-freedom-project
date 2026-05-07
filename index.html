@@ -23,6 +23,7 @@
         <script>
             // JS
             kaboom()
+            setBackground(144, 214, 144); // green background
             // load each sprite seed
             loadSprite("blue", "img/blue-seed.png");
             loadSprite("green", "img/green-seed.png");
@@ -43,12 +44,17 @@
             loadSprite("yellowF", "img/yellow-f.png");
             // house sprite
             loadSprite("house", "img/house.png");
+            // brown background
+            loadSprite("brown", "img/brown.png");
+            // other greens
+            loadSprite("grass", "img/grassy.png");
+            loadSprite("plant", "img/plant.png");
 
             var userName = prompt("What is your name?"); // global variable
             scene("front", () => { // front page scene
                 add([
                     pos(200, 100),
-                    color(0, 255, 0),
+                    color(0),
                     text("Welcome to " + userName + "'s Garden!", { // introduction text
                     size: 60, // text size
                     width: 550, // width the text can be before moving to a new line
@@ -146,6 +152,45 @@
             });
 
             scene("game", () =>{ // game scene
+                add([ // add brown dirt
+                    sprite("brown"), // dirt name
+                    pos(0, 0),
+                    scale(1.1), // size
+                ]);
+                var decoration = addLevel([ // map
+                    "=             ,       =",
+                    "    ,                  ",
+                    "=                     =",
+                    "                       ",
+                    "=                     =",
+                    "                       ",
+                    "=                     =",
+                    "                       ",
+                    "=                     =",
+                    "                       ",
+                    "=                 ,   =",
+                    "                       ",
+                    "=   ,                 =",
+                    "                       ",
+                    "=             ,       =",
+                    "                       ",
+                ], {
+                    // how much each sprite tile will occupy
+                    tileWidth: 32,
+                    tileHeight: 32,
+                    tiles: {
+                        "=": () => [ // symbol for grass
+                            sprite("grass"),
+                            scale(0.2),
+                            area(),
+                        ],
+                        ",": () => [ // symbol for plant
+                            sprite("plant"),
+                            scale(0.2),
+                            area(),
+                        ],
+                    }
+                })
                 function getSeed(){ // function to get seed
                     var userColor = prompt("Hey! Pick a color for a seed!"); // user chooses what color seed they want
                     if(userColor.toLowerCase() == "red"){  // if user types in "red", they will get a red seed
@@ -282,7 +327,7 @@
                 }
                 var seedButton = add([ // add seed button
                     rect(300, 50), // width and length
-                    pos(600, 600), // location x and y
+                    pos(600, 630), // location x and y
                     area(),
                     anchor("center"),
                 ]);
@@ -296,7 +341,7 @@
                 });
                 var backButton2 = add([ // add back button
                     rect(300, 50), // width and length
-                    pos(170, 600), // location x and y
+                    pos(170, 630), // location x and y
                     area(),
                     anchor("center"),
                 ]);

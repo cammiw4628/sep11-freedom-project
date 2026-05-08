@@ -1,16 +1,21 @@
 # Presentation Plan
 
 ## Hook
-* 
+* Start with a "have you ever.." question, like "have you ever had difficulty with making decisions..?"
+* Display slides of different color options explaining the variety of colors and color themes on flowers.
 
 ## Product
-* 
+* Have a URL to demo my game and how it functions
+* images of my project on the slide
 
 ## Process
-* 
+* Showing how I used array and conditionals to motivate users to play my game
+* Show challenge on user's name being unable to save as user moves through scenes and solution explained
 
 ## Conclusion
-* 
+* My takeaway is to not be afraid to face challenges because it will only teach you to overcome it.
+* Mention the game is to teach users that making choices is apart of life and the game teaches people to overcome how to choose what they want.
+* Permanent URL using tiny.cc
 
 <!-- EXAMPLE
 

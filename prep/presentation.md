@@ -9,7 +9,7 @@
 * images of my project on the slide
 
 ## Process
-* Showing how I used array and conditionals to motivate users to play my game
+* Show how I learned kaboom, like how I learned to create "custom" functions for buttons and called those functions.
 * Show challenge on user's name being unable to save as user moves through scenes and solution explained
 
 ## Conclusion

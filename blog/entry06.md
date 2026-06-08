@@ -1,8 +1,14 @@
 # Entry 6
-##### X/X/XX
+##### 5/13/26
 
-Text
+### Content
+Throughout the school year, I have been working on my SEP Freedom Project using all the materials I gained from class like Javascript and self learning [kaboom.js](https://kaboomjs.com/) to create a garden game. Towards the end of the year, I had to present my presentation in class. My [Presentation Plan](https://github.com/cammiw4628/sep11-freedom-project/blob/main/prep/presentation.md) helped me organize how my presentation will look like in class with separating it into hook to engage the audience, product to showcase what I made, process to show how I overcame challenges and worked towards a accessable game, and conclusion to wrap up my main takeaways. After my plan, I had to create slides to put all my work together in [Slide Presentation](https://docs.google.com/presentation/d/1ROQncBcwLiUHUUqemQB2rFZURaCu5lB0N-yD6pdd0cQ/edit?slide=id.p#slide=id.p). My **main takeaways from my class presentation** was I felt that I improved the most by not being afraid of speaking up because it is my project that I should be proud of and show off to people. This made me feel less nervous and excited to talk about what I was able to create for my freedom project. I learned I should be specificabout my ideas to convey what my project can contribute towards other poeple that may struggle with decision making. **My main takeaway for my expo elevator pitch** was that it is okay to be nervous. I noticed the judges physically timing us for one minute each time to be precise of when we finish. That meant I had to be prepared to speak about my project in that time in an organized way. I met so many other students that complimented my project and that idea I had, which was the best encouragement I could have ever recieved to be sucessful in talking to the judges.
+### Engineering Design Process
+I am on **step 8** of the engineering Design process of _communicating the results_ through the elevator pitches to different students at our school, as well as in class presentations. I have already improved my project in step 7 to the best of my abilities thanks to multiple feedbacks through my peers in class and I felt I correctly reflected who I was through this project. Communication was difficult because first encounters are always hard but it is something to improve upon during my freedom project.
+### Skills
+A skill I learned was **improving my presentation skills** of eye contact, projecting my voice, and explaining clearly for people to understabd my project and the topic it was trying to explain. Another skill was **communication** because it is hard to get ideas of improvement without communicating to people about ways to make your project better. Their feedback is essential to making the project sucessful.
 
-[Previous](entry05.md) | [Next](entry07.md)
+
+[Previous](entry05.md)
 
 [Home](../README.md)
